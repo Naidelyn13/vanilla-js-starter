@@ -10,7 +10,7 @@
 .fuente{
     font-family:"fuente1" ;
     height: 60px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -150,7 +150,7 @@ border: 1px solid black;
     height: 30px;
     font-size: 15px;
      width: 100px;
-     margin-left:290px ;
+     margin-left:195px ;
      display: flex;
      margin-top: -29px;
 }
@@ -189,7 +189,7 @@ border: 1px solid black;
 }
 
 #clicks{
-    margin-left: 200px;
+    /* margin-left: 200px; */
     text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
@@ -224,9 +224,9 @@ border: 1px solid black;
     display: none;
 }
 
-#inputBuscar{
+/* #inputBuscar{
     margin-left: 95px;
-}
+} */
 #inputTask{
    margin-left: -20px;  
 }
