@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "fuente1" ;
+    src: url("Pinky\ Style.ttf") format(truetype);
+}
+@font-face {
+    font-family: "fuente2" ;
+    src: url("SMASH.otf") format(opentype);
+}
+
+.fuente{
+    font-family:"fuente1" ;
+    height: 60px;
+    margin-left: 200px;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+:root{
+    --primary: #A5C882;
+    --secondary: #D33F49;
+    --light: #fff;
+    --dark: #000;
+    --diabled:#e7e7e7;
+
+}
+
+body{
+
+    margin: 0%;
+    min-height: 100vh ;
+    height: 100%;
+    background-image: url("Imagejtb7-1684960500563.webp") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+:first-letter{
+    text-transform: capitalize;
+}
+.roundBorder{
+border-radius: 6px;
+}
+
+.list{
+    margin: 100px auto;
+    padding: 100px;
+    background-color: rgba(233, 150, 122,.6)  ;
+    width: 1000px;
+    max-width: 1000px;
+
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dateRight{
+    display: flex;
+    align-items: center;
+}
+#dateNumber{
+  
+    font-family: "fuente2" ;
+    font-size: 50px;
+    margin-left: 300px;
+
+}
+#dateText{
+  
+    font-family: "fuente2" ;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText{
+    font-weight: bold;
+    
+}
+
+#dateMonth,
+#dateYear{
+
+    font-family: "fuente2" ;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column: 15px;
+}
+
+
+input{
+    border: none;
+    background-color: azure;
+    padding-left: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.addTaskButton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+ left: 50px;
+ text-shadow:
+ 0 0 5px #fff,
+ 0 0 10px #fff,
+ 0 0 20px #fff,
+ 0 0 40px #0ff,
+ 0 0 80px #0ff,
+ 0 0 90px #0ff,
+ 0 0 100px #0ff,
+ 0 0 150px #0ff;
+}
+.addTaskButton{
+    height: 30px;
+    font-size: 15px;
+     width: 100px;
+     margin-left:180px ;
+     display: flex;
+     margin-top: -29px;
+}
+
+button:hover{
+cursor: pointer;
+color: black;
+background-color: aquamarine;
+border: 1px solid black;
+
+}
+#buscar{
+    height: 30px;
+    font-size: 15px;
+     width: 100px;
+     margin-left:290px ;
+     display: flex;
+     margin-top: -29px;
+}
+#fecha{
+    width: 100px;
+    margin-left:10px ;
+}
+
+.task{
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color:black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.done{
+    background-color: var(--diabled) ;
+    text-decoration: line-through;
+    color: var(--dark);
+}
+.titulo{
+    font-family:"fuente1" ;
+    text-align: center;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+
+}
+
+#clicks{
+    margin-left: 200px;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+.dateRight{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.color-boton{
+    border: none;
+    background-color: transparent;
+ 
+}
+
+
+.addTaskButton{
+    background-color:  skyblue;
+    border-radius: 20px;
+    left: 80px;
+}
+
+
+.oculto{
+    display: none;
+}
+
+#inputBuscar{
+    margin-left: 95px;
+}
+#inputTask{
+   margin-left: -20px;  
+}
+
+@media only screen and (max-width:600px){
+.list{
+    width: 100%;
+    padding: 20px;
+}
+
+#btnfilt{
+    width: 100%;
+ margin-left: -114px;
+}
+#contador{
+    width: 100%;
+    margin-left: -114px;
+}
+#fecha{
+    width: 100%;
+    margin-left: 10px;
+}
+}
